@@ -53,8 +53,8 @@ h1 {
 }
 
 .cell.one span.planetName {
-    font-size: 40px;
-    margin: 50px;
+    font-size: 50px;
+    margin: 80px;
 }
 
 .cell.one span.secondaryText {
@@ -69,4 +69,5 @@ h1 {
 .secondaryText {
     font-weight: normal;
     font-size: 20px;
+    padding-top:5px;
 }
