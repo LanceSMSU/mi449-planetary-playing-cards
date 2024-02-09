@@ -1,7 +1,14 @@
+:root{
+    --large-planet-size: 250px;
+    --small-planet-size: 100px;
+    --main-background-color: #1f1f1e;
+    --cell-background-color: lightgray;
+}
+
 body {
     font-family: Helvetica, sans-serif;
     color: white;
-    background: #1f1f1e;
+    background: var(--main-background-color);
     padding: 0 40px;
     text-align: left;
 }
@@ -20,7 +27,7 @@ h1 {
 }
 
 .cell {
-    background: lightgray;
+    background: var(--cell-background-color);
     color: black;
     border-radius: 20px;
     font-weight: bold;
@@ -37,16 +44,16 @@ h1 {
 }
 
 .cell.one .planet {
-    height: 250px;
-    width: 250px;
+    height: var(--large-planet-size);
+    width: var(--large-planet-size);
     background-color: white;
     border-radius: 50%;
     margin: 50px 40px;
 }
 
 .planet {
-    height: 100px;
-    width: 100px;
+    height: var(--small-planet-size);
+    width: var(--small-planet-size);
     background-color: white;
     border-radius: 50%;
     margin: 30px 120px;
