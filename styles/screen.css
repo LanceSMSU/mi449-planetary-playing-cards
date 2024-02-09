@@ -1,7 +1,7 @@
 body {
     font-family: Helvetica, sans-serif;
     color: white;
-    background: #2D3142;
+    background: #1f1f1e;
     padding: 0 40px;
     text-align: left;
 }
@@ -10,4 +10,63 @@ h1 {
     font-size: 4em;
     letter-spacing: -2px;
     padding-top: 50px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-auto-rows: 15em;
+    gap: 40px;
+}
+
+.cell {
+    background: lightgray;
+    color: black;
+    border-radius: 20px;
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+}
+
+.cell.one {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    font-size: 40px;
+}
+
+.cell.one .planet {
+    height: 250px;
+    width: 250px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 50px 40px;
+}
+
+.planet {
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 30px 120px;
+}
+
+.cell.one span.planetName {
+    font-size: 40px;
+    margin: 50px;
+}
+
+.cell.one span.secondaryText {
+    font-weight: normal;
+    font-size: 30px;
+}
+
+.planetName {
+    font-size: 30px;
+}
+
+.secondaryText {
+    font-weight: normal;
+    font-size: 20px;
 }
