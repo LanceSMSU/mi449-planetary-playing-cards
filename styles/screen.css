@@ -3,6 +3,7 @@
     --small-planet-size: 100px;
     --main-background-color: #1f1f1e;
     --cell-background-color: lightgray;
+    --cell-hover-color:gray;
 }
 
 body {
@@ -37,7 +38,7 @@ h1 {
 
 
 .cell:hover {
-    background: gray;
+    background: var(--cell-hover-color);;
     color:white;
 }
 
