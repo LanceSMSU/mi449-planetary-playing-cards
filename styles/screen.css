@@ -35,6 +35,12 @@ h1 {
     align-items: center;
 }
 
+
+.cell:hover {
+    background: gray;
+    color:white;
+}
+
 .cell.one {
     grid-column-start: 1;
     grid-column-end: 2;
@@ -46,7 +52,6 @@ h1 {
 .cell.one .planet {
     height: var(--large-planet-size);
     width: var(--large-planet-size);
-    background-color: white;
     border-radius: 50%;
     margin: 50px 40px;
 }
@@ -77,4 +82,40 @@ h1 {
     font-weight: normal;
     font-size: 20px;
     padding-top:5px;
+}
+
+.sun{
+    background-image: radial-gradient(white, yellow, orange);
+}
+
+.mercury{
+    background-image: radial-gradient(#bababa, #b4b4b4, #9c9c9c);
+}
+
+.venus{
+    background-image: radial-gradient(#c59d77, #d2a281, #f2c273);
+}
+
+.earth{
+    background-image: radial-gradient(#6687d1, #7aa3e5, #97c1ff);
+}
+
+.mars{
+    background-image: radial-gradient(#d1705f, #e08772, #ff9e82);
+}
+
+.jupiter{
+    background-image: radial-gradient(#c49880, #d1a78d, #e8b79c);
+}
+
+.saturn{
+    background-image: radial-gradient(#e5cda7, #f1ddbb, #ffe4c8);
+}
+
+.uranus{
+    background-image: radial-gradient(#81c3e2, #a1d2ed, #c3e3f8);
+}
+
+.neptune{
+    background-image: radial-gradient(#4e7ac7, #6495d5, #86b6e5);
 }
